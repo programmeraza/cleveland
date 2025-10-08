@@ -1,0 +1,89 @@
+.hero {
+    padding: 124px 0 160px 0;
+    background-color: #fff;
+
+    &__container {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    &__wrapper {
+        background-image: url(../../../public/gospital.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        height: 650px;
+        width: 100%;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        gap: 24px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+        width: 100%;
+        max-width: 922px;
+        h1 {
+            font-size: clamp(2rem, 1.543rem + 1.95vw, 3.25rem);
+            color: #fff;
+        }
+        p {
+            font-size: clamp(1rem, 0.909rem + 0.39vw, 1.25rem);
+            color: #fff;
+            width: 100%;
+            max-width: 594px;
+        }
+    }
+
+    &__inp-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    &__inp {
+        position: relative;
+        input {
+            width: 418px;
+            padding: 16px 59px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            color: #000;
+            outline: none;
+        }
+        img {
+            position: absolute;
+            top: 16px;
+            left: 24px;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        width: max-content;
+        padding: 15px 27px;
+        background-color: #007839;
+        border: 1px solid #007839;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 16px;
+        transition: all .5s ease;
+        &:hover {
+            background-color: #00592b;
+        }
+    }
+}
