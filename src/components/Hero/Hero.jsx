@@ -18,9 +18,27 @@ const Hero = () => {
                             </div>
                             <button className="hero__btn">
                                 Поиск
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.16699 10H15.8337" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M10 4.16669L15.8333 10L10 15.8334" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M4.16699 10H15.8337"
+                                        stroke="white"
+                                        strokeWidth="1.66667"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    />
+                                    <path
+                                        d="M10 4.16669L15.8333 10L10 15.8334"
+                                        stroke="white"
+                                        strokeWidth="1.66667"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    />
                                 </svg>
                             </button>
                         </div>
