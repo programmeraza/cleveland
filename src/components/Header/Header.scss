@@ -84,7 +84,6 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-        justify-content: space-between;
         overflow-y: auto;
 
         &.active {
@@ -110,18 +109,12 @@
         flex-direction: column;
         align-items: start;
         gap: 24px;
-        padding: 40px 16px 40px 16px;
+        padding: 120px 16px 40px 16px;
 
         a {
             color: #1E1E1E;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 500;
-            text-decoration: none;
-            transition: color 0.3s ease;
-
-            &:hover {
-                color: #007839;
-            }
         }
     }
 
