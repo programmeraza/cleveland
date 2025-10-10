@@ -1,0 +1,51 @@
+.branch {
+    margin-top: 100px;
+    padding: 24px 20px;
+    background-color: #fff;
+    
+    &__container {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+    &__wrapper {
+        background-image: url(../../../public/operation.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 12px;
+        height: 400px;
+        width: 100%;
+        padding: 204px 16px 60px 60px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        @media (max-width: 768px) {
+            padding: 332px 16px 24px 16px;
+            height: 540px;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 628px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+        h1 {
+            font-size: clamp(2rem, 1.171rem + 3.54vw, 4rem);
+            color: #fff;
+        }
+        p {
+            color: #fff;
+            font-size: 16px;
+            line-height: 24px;
+            width: 100%;
+            max-width: 495px;
+        }
+    }
+}

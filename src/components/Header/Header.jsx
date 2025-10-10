@@ -27,7 +27,7 @@ const Header = () => {
                         <div className="header__nav-flex">
                             <ul className="header__ul">
                                 <Link>О нас</Link>
-                                <Link>Преимущества</Link>
+                                <Link to={'/chevron'}>Преимущества</Link>
                                 <Link>Вакансии</Link>
                                 <Link>Контакты</Link>
                             </ul>
@@ -47,7 +47,7 @@ const Header = () => {
                                 </div>
                                 <ul className="header__menu-list">
                                     <Link onClick={closeMenu}>О нас</Link>
-                                    <Link onClick={closeMenu}>Преимущества</Link>
+                                    <Link to={'/chevron'} onClick={closeMenu}>Преимущества</Link>
                                     <Link onClick={closeMenu}>Вакансии</Link>
                                     <Link onClick={closeMenu}>Контакты</Link>
                                     <SelectUi />
