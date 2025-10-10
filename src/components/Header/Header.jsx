@@ -21,7 +21,9 @@ const Header = () => {
             <div className="header">
                 <div className="container">
                     <div className="header__wrapper">
-                        <img src="./logo.svg" alt="logo" />
+                        <Link to={'/'}>
+                            <img src="./logo.svg" alt="logo" />
+                        </Link>
                         <div className="header__nav-flex">
                             <ul className="header__ul">
                                 <Link>О нас</Link>
@@ -36,7 +38,9 @@ const Header = () => {
 
                             <div className={`header__menu ${menuOpen ? 'active' : ''}`}>
                                 <div className="header__menu-top">
-                                    <img src="./logo.svg" alt="logo" />
+                                    <Link to={'/'}>
+                                        <img src="./logo.svg" alt="logo" />
+                                    </Link>
                                     <button className="header__menu-close" onClick={closeMenu}>
                                         <IoCloseOutline />
                                     </button>
