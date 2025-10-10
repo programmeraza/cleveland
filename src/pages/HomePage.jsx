@@ -11,6 +11,9 @@ import Partner from '../components/Partner/Partner'
 import Experience from '../components/Experience/Experience'
 import Our from '../components/Our/Our'
 import List from '../components/List/List'
+import Accordion from '../components/Accordion/Accordion'
+import Contact from '../components/Contact/Contact'
+import Footer from '../components/Footer/Footer'
 
 const HomePage = () => {
   return (
@@ -27,6 +30,9 @@ const HomePage = () => {
       <Experience/>
       <Our/>
       <List/>
+      <Accordion/>
+      <Contact/>
+      <Footer/>
     </>
   )
 }

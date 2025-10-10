@@ -3,6 +3,7 @@ import './App.scss'
 import HomePage from './pages/HomePage'
 import ChevronPage from './pages/ChevronPage'
 import ErrorPage from './pages/ErrorPage'
+import PolicyPage from './pages/PolicyPage'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage/>} />
         <Route path='/chevron' element={<ChevronPage/>} />
+        <Route path='/policy' element={<PolicyPage/>} />
         <Route path='*' element={<ErrorPage/>} />
       </Routes>
     </>
