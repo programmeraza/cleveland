@@ -1,6 +1,7 @@
 import React from 'react'
 import './Area.scss'
 
+
 const Area = () => {
   return (
     <>
@@ -9,6 +10,7 @@ const Area = () => {
             <div className="area__wrapper">
                 <div className="area__card">
                     <h2 className='area__title1'>91 500 м²</h2>
+                
                     <div className="area__line"></div>
                     <p>Общая площадь госпиталя, строительство завершится к концу 2027 года в две очереди.</p>
                 </div>

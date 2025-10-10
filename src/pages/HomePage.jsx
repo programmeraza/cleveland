@@ -9,6 +9,7 @@ import Text from '../components/Text/Text'
 import Area from '../components/Area/Area'
 import Partner from '../components/Partner/Partner'
 import Experience from '../components/Experience/Experience'
+import Our from '../components/Our/Our'
 
 const HomePage = () => {
   return (
@@ -23,6 +24,7 @@ const HomePage = () => {
       <Area/>
       <Partner/>
       <Experience/>
+      <Our/>
     </>
   )
 }
