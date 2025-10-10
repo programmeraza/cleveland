@@ -10,6 +10,7 @@ import Area from '../components/Area/Area'
 import Partner from '../components/Partner/Partner'
 import Experience from '../components/Experience/Experience'
 import Our from '../components/Our/Our'
+import List from '../components/List/List'
 
 const HomePage = () => {
   return (
@@ -25,6 +26,7 @@ const HomePage = () => {
       <Partner/>
       <Experience/>
       <Our/>
+      <List/>
     </>
   )
 }

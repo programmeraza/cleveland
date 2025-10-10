@@ -21,7 +21,8 @@
         align-items: start;
         gap: 24px;
         padding: 48px 32px;
-        width: 410px;
+        width: 100%;
+        max-width: 410px;
     }
 
     &__title1 {
