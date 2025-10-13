@@ -14,6 +14,7 @@ import List from '../components/List/List'
 import Accordion from '../components/Accordion/Accordion'
 import Contact from '../components/Contact/Contact'
 import Footer from '../components/Footer/Footer'
+import Up from '../components/Up/Up'
 
 const HomePage = () => {
   return (
@@ -33,6 +34,7 @@ const HomePage = () => {
       <Accordion/>
       <Contact/>
       <Footer/>
+      <Up/>
     </>
   )
 }

@@ -4,17 +4,21 @@ import { Link } from 'react-router-dom'
 import SelectUi from "../SelectUi/SelectUi"
 import { FiMenu } from "react-icons/fi";
 import { IoCloseOutline } from "react-icons/io5";
+import ModalForm from "../ModalForm/ModalForm";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [modalOpen, setModalOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setMenuOpen((prev) => !prev);
+    const toggleMenu = () => setMenuOpen((prev) => !prev);
+    const closeMenu = () => setMenuOpen(false);
+
+    const openModal = () => {
+        setModalOpen(true);
+        closeMenu();
     };
 
-    const closeMenu = () => {
-        setMenuOpen(false);
-    };
+    const closeModal = () => setModalOpen(false);
 
     return (
         <>
@@ -52,7 +56,7 @@ const Header = () => {
                                     <Link onClick={closeMenu}>Контакты</Link>
                                     <SelectUi />
                                     <Link>
-                                        <button className="header__menu-list-btn">
+                                        <button className="header__menu-list-btn" onClick={openModal}>
                                             Подать заявку
                                         </button>
                                     </Link>
@@ -60,17 +64,17 @@ const Header = () => {
                             </div>
 
                             <div className="header__btn-flex">
-                                <Link>
-                                    <button className="header__btn">
-                                        Подать заявку
-                                    </button>
-                                </Link>
+                                <button className="header__btn" onClick={openModal}>
+                                    Подать заявку
+                                </button>
                                 <SelectUi />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <ModalForm isOpen={modalOpen} onClose={closeModal} />
         </>
     )
 }
