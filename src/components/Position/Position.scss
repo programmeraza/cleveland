@@ -19,18 +19,35 @@
         width: 100%;
         max-width: 844px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: auto;
+        grid-template-columns: 1fr 1fr;
         gap: 40px 16px;
+        grid-template-areas:
+            "card1 card1"
+            "card2 card2"
+            "card3 card3"
+            "card4 card4"
+            "card5 card6"
+            "card7 card8"
+            "card9 card9"
+            "card10 card10";
 
-        // 🟢 Адаптивная перестройка
         @media (max-width: 768px) {
             grid-template-columns: 1fr;
+            grid-template-areas:
+                "card1"
+                "card2"
+                "card3"
+                "card4"
+                "card5"
+                "card6"
+                "card7"
+                "card8"
+                "card9"
+                "card10";
             gap: 24px;
         }
     }
 
-    // 🧩 Общие стили для всех карточек
     .card1,
     .card2,
     .card3,
@@ -49,6 +66,7 @@
         gap: 24px;
         padding: 16px;
         width: 100%;
+        max-width: 844px;
 
         // 🧠 Автоматическая высота
         height: auto;
@@ -85,7 +103,17 @@
         }
     }
 
-    // 🧱 Дополнительная адаптация для контента внутри card1
+    .card1 { grid-area: card1; }
+    .card2 { grid-area: card2; }
+    .card3 { grid-area: card3; }
+    .card4 { grid-area: card4; }
+    .card5 { grid-area: card5; }
+    .card6 { grid-area: card6; }
+    .card7 { grid-area: card7; }
+    .card8 { grid-area: card8; }
+    .card9 { grid-area: card9; }
+    .card10 { grid-area: card10; }
+
     .card1 {
         &__content-ul {
             display: flex;
@@ -129,7 +157,7 @@
         padding: 16px;
         background-color: #FAFAFA;
         border-radius: 16px;
-        width: 100%;
+        width: 412px;
 
         @media (max-width: 768px) {
             align-items: center;
