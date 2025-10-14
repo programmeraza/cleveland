@@ -14,17 +14,23 @@ const Experience = () => {
                         <div className="expert__bottom">
                             <div className="expert__cards">
                                 <div className="expert__card">
-                                    <img src="./heart.png" alt="" />
+                                    <div className="expert__card-img">
+                                        <img src="./center1.svg" alt="" />
+                                    </div>
                                     <h4>Международное лечение</h4>
                                     <p>Госпиталь будет работать по стандартам Cleveland Clinic: доказательные протоколы, мультидисциплинарный подход, цифровая медицина и культура безопасности пациента.</p>
                                 </div>
                                 <div className="expert__card">
-                                    <img src="./light.png" alt="" />
+                                    <div className="expert__card-img">
+                                        <img src="./center2.svg" alt="" />
+                                    </div>
                                     <h4>Обучение в клинической среде</h4>
                                     <p>CAU Hospital станет базой для студентов, ординаторов и врачей. Здесь они получат практико-ориентированное обучение, наставничество и доступ к современным симуляционным центрам.</p>
                                 </div>
                                 <div className="expert__card">
-                                    <img src="./people.png" alt="" />
+                                    <div className="expert__card-img">
+                                        <img src="./center3.svg" alt="" />
+                                    </div>
                                     <h4>Научные исследования и инновации</h4>
                                     <p>В госпитале будет создана среда для научных исследований и внедрения передовых технологий. Совместные проекты с международными партнёрами повысят роль Узбекистана в глобальной науке.</p>
                                 </div>

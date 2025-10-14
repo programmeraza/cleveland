@@ -12,7 +12,9 @@ const Contact = () => {
               <h1>Есть вопросы? Свяжитесь с нами!</h1>
               <div className="contact__cards">
                 <div className="contact__card">
-                  <img src="./call3.png" alt="" />
+                  <div className="contact__card-img">
+                    <img src="./call1.svg" alt="" />
+                  </div>
                   <h3>Напишите нам</h3>
                   <p>Круглосуточно, каждый день</p>
                   <Link to="#">
@@ -21,7 +23,9 @@ const Contact = () => {
                 </div>
 
                 <div className="contact__card">
-                  <img src="./call2.png" alt="" />
+                  <div className="contact__card-img">
+                    <img src="./call2.svg" alt="" />
+                  </div>
                   <h3>Мы рады видеть вас здесь</h3>
                   <strong>
                     111221, Узбекистан, <br /> г. Ташкент, ул. Миллий бог, 264
@@ -29,7 +33,9 @@ const Contact = () => {
                 </div>
 
                 <div className="contact__card">
-                  <img src="./call1.png" alt="" />
+                  <div className="contact__card-img">
+                    <img src="./call3.svg" alt="" />
+                  </div>
                   <h3>Мы в социальных сетях</h3>
                   <p>Полезный контент всегда тут</p>
                   <div className="contact__icon-flex">
@@ -70,10 +76,11 @@ const Contact = () => {
                 width="600"
                 height="450"
                 style={{ border: 0 }}
-                allowFullScreen
+                allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-              />
+              ></iframe>
+
             </div>
           </div>
         </div>

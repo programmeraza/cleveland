@@ -42,7 +42,7 @@ const Hero = () => {
 
     return (
         <div className="hero">
-            <div className="hero__container">
+            <div className="container hero__container">
                 <div className="hero__wrapper">
                     <div className="hero__content">
                         <h1>Присоединяйтесь к проекту мирового уровня в Узбекистане</h1>

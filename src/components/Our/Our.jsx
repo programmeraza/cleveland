@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Our.scss";
+import ModalForm from "../ModalForm/ModalForm";
 
 const Our = () => {
+
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+    closeMenu();
+  };
+
+  const closeModal = () => setModalOpen(false);
+
   return (
     <>
       <div className="our">
@@ -64,7 +75,7 @@ const Our = () => {
                 </div>
               </div>
             </div>
-            <button className="our__btn">
+            <button className="our__btn" onClick={openModal}>
               Подать заявку в лист ожидания
               <svg
                 width="20"
@@ -92,6 +103,8 @@ const Our = () => {
           </div>
         </div>
       </div>
+
+      <ModalForm isOpen={modalOpen} onClose={closeModal} />
     </>
   );
 };

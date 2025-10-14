@@ -3,8 +3,8 @@ import Select from 'react-select'
 import './SelectUi.scss'
 
 const options = [
-  { value: 'ru', label: 'Русский' },
-  { value: 'en', label: 'English' }
+  { value: 'ru', label: 'RU' },
+  { value: 'en', label: 'EN' }
 ]
 
 const SelectUi = () => (
@@ -14,7 +14,7 @@ const SelectUi = () => (
     styles={{
       control: (provided) => ({
         ...provided,
-        width: '90px',
+        width: '80px',
         minHeight: '28px',
         border: 'none',
         boxShadow: 'none',
@@ -23,7 +23,7 @@ const SelectUi = () => (
       }),
       valueContainer: (provided) => ({
         ...provided,
-        padding: '12px 6px'
+        padding: '12px 10px'
       }),
       indicatorsContainer: (provided) => ({
         ...provided,
@@ -31,10 +31,12 @@ const SelectUi = () => (
       }),
       dropdownIndicator: (provided) => ({
         ...provided,
-        padding: 2
+        padding: 2,
+        color: '#1E1E1E',
+        paddingRight: '12px'
       }),
       indicatorSeparator: () => ({
-        display: 'none'
+        display: 'none',
       }),
       menu: (provided) => ({
         ...provided,

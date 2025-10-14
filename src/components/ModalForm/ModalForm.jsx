@@ -57,7 +57,7 @@ const ModalForm = ({ isOpen, onClose, children }) => {
                         </select>
                     </div>
 
-                    <div className="modal-field">
+                    <div className="modal-field-file">
                         <label>Пожалуйста, загрузите ваше резюме *</label>
                         <input type="file" accept=".pdf,.doc,.docx" />
                     </div>

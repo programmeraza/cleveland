@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Position.scss'
 import { Link } from 'react-router-dom'
+import ModalForm from '../ModalForm/ModalForm';
 
 const Position = () => {
+
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const openModal = () => {
+        setModalOpen(true);
+        closeMenu();
+    };
+
+    const closeModal = () => setModalOpen(false);
+
     return (
         <>
             <div className="position">
@@ -129,7 +140,7 @@ const Position = () => {
                         <div className="position__btn-flex">
                             <p>Кандидатов: 231</p>
                             <Link>
-                                <button className="position__btn">
+                                <button className="position__btn" onClick={openModal}>
                                     Присоединиться к резерву
                                 </button>
                             </Link>
@@ -137,6 +148,8 @@ const Position = () => {
                     </div>
                 </div>
             </div>
+
+            <ModalForm isOpen={modalOpen} onClose={closeModal} />
         </>
     )
 }
