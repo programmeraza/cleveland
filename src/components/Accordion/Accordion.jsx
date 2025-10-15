@@ -1,4 +1,3 @@
-// CustomAccordion.jsx
 import * as React from "react";
 import MuiAccordion, { accordionClasses as muiAccordionClasses } from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -63,7 +62,7 @@ export default function Accordion() {
               ]}
             >
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                expandIcon={<img src="./arrow.svg" alt="arrow" className="accordion-arrow"/>}
                 aria-controls={`panel${index}-content`}
                 id={`panel${index}-header`}
                 className="accordion-block__summary"

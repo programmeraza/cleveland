@@ -70,12 +70,12 @@ const Hero = () => {
                                     style={
                                         filtered.length === 0
                                             ? {
-                                                  backgroundImage: "url('./not-found.png')", 
-                                                  backgroundRepeat: "no-repeat",
-                                                  backgroundPosition: "center",
-                                                  backgroundSize: "40% auto",
-                                                  height: "300px",
-                                              }
+                                                backgroundImage: "url('./not-found.png')",
+                                                backgroundRepeat: "no-repeat",
+                                                backgroundPosition: "center",
+                                                backgroundSize: "40% auto",
+                                                height: "300px",
+                                            }
                                             : {}
                                     }
                                 >

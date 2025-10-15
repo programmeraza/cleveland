@@ -40,7 +40,7 @@
         gap: 8px;
         width: 100%;
         max-width: 922px;
-        z-index: 10;
+        z-index: 1;
 
         h1 {
             font-size: clamp(2rem, 1.543rem + 1.95vw, 3.25rem);
@@ -141,6 +141,8 @@
         }
     }
 
+    
+
     &__btn {
         display: flex;
         justify-content: center;
@@ -188,3 +190,4 @@
         }
     }
 }
+
